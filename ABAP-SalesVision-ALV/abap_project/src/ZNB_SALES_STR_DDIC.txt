@@ -1,0 +1,35 @@
+*&---------------------------------------------------------------------*
+*& Data Dictionary Object : ZNB_SALES_STR
+*& Type                   : Structure (DDIC)
+*& Author                 : Nayanika Bardhan | Roll No: 2305464
+*& Program                : B.Tech CSE, 3rd Year
+*& Description            : Custom flat structure used for the
+*&                          Sales Order ALV report internal table.
+*&---------------------------------------------------------------------*
+*
+*  This file documents the ABAP Dictionary (SE11) structure.
+*  Create manually in SE11 as a Flat Structure: ZNB_SALES_STR
+*
+*  FIELD        TYPE REF TO         SHORT DESCRIPTION
+*  ---------    ------------------  -----------------------------------
+*  VBELN        VBAK-VBELN          Sales Document Number
+*  ERDAT        VBAK-ERDAT          Date on which the record was created
+*  AUART        VBAK-AUART          Sales Document Type
+*  KUNNR        VBAK-KUNNR          Sold-to Party (Customer)
+*  NAME1        KNA1-NAME1          Customer Name
+*  POSNR        VBAP-POSNR          Sales Document Item
+*  MATNR        VBAP-MATNR          Material Number
+*  ARKTX        VBAP-ARKTX          Short text for the sales order item
+*  KWMENG       VBAP-KWMENG         Cumulative order quantity
+*  VRKME        VBAP-VRKME          Sales unit
+*  NETWR        VBAP-NETWR          Net value of the order item
+*  WAERK        VBAK-WAERK          SD document currency
+*  COLOR_FIELD  LVC_T_SCOL          ALV cell colour table (internal)
+*
+*  ACTIVATION STEPS (SE11):
+*  1. Transaction SE11 → select "Data type" → enter ZNB_SALES_STR → Create
+*  2. Choose "Structure"
+*  3. Add fields as listed above, referencing the standard data elements
+*  4. Save and Activate
+*
+*---------------------------------------------------------------------*

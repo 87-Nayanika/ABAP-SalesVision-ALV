@@ -1,0 +1,27 @@
+*&---------------------------------------------------------------------*
+*& Object      : ZNB_SALES_MSG
+*& Type        : Message Class
+*& Author      : Nayanika Bardhan | Roll No: 2305464
+*& Program     : B.Tech CSE, 3rd Year
+*& Description : Custom message class for ZNB_SALES_ALV_REPORT
+*&---------------------------------------------------------------------*
+*
+*  Create in transaction SE91:
+*  Message Class : ZNB_SALES_MSG
+*  Short Description : Messages for Sales ALV Report (Nayanika Bardhan)
+*
+*  MSG NO  TYPE  SHORT TEXT
+*  ------  ----  --------------------------------------------------
+*  001     I     No records found for the selection criteria entered.
+*  002     E     From Date must not be greater than To Date.
+*  003     E     Maximum rows value must be a positive integer.
+*  004     S     Report executed successfully. & record(s) retrieved.
+*  005     W     Customer & does not exist in master data (KNA1).
+*
+*  STEPS TO CREATE:
+*  1. SE91 → Message class: ZNB_SALES_MSG → Create
+*  2. Enter short description
+*  3. Add messages as shown above
+*  4. Save and assign to a development package (e.g. $TMP or ZNBDEV)
+*
+*---------------------------------------------------------------------*
